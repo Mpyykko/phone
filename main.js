@@ -1,4 +1,4 @@
-console.log('Hi guys :) this web site is made for mobile devices with screens less than 700px wide');
+console.log('Hi guys :)');
 
 const now = new Date();
 
@@ -62,6 +62,8 @@ document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
 document.addEventListener('DOMContentLoaded', function() {
     const applicationsDiv = document.querySelector('.applications');
+    const galleryDiv = document.querySelector('.gallery');
+    const backToMenuButton = document.querySelector('#backToMenu');
 
     const apps = [
         { id: 'app1', icon: 'images/fb.jpg', link: '#' },
@@ -69,34 +71,40 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app3', icon: 'images/yu.png', link: '#' },
         { id: 'app4', icon: 'images/vs.png', link: '#' },
         { id: 'app5', icon: 'images/sa.png', link: '#' },
-        { id: 'app6', icon: 'images/ap.png', link: '#' }
-       
+        { id: 'app6', icon: 'images/ap.png', link: '#' },
+        { id: 'app7', icon: 'images/gal.jpg', link: '#' }
     ];
 
     apps.forEach(app => {
         const appDiv = document.createElement('div');
         appDiv.className = 'app';
-        appDiv.setAttribute('onclick', `openApp('${app.id}')`);
+
+        const appLink = document.createElement('a');
+        appLink.href = app.link;
+        appLink.className = 'app-link';
 
         const appIcon = document.createElement('img');
         appIcon.src = app.icon;
         appIcon.alt = `Icon for ${app.id}`;
         appIcon.className = 'app-icon';
 
-        const appLink = document.createElement('a');
-        appLink.href = app.link;
-        appLink.className = 'app-link';
-        appLink.textContent = app.id;
-
-  
-        appDiv.appendChild(appIcon);
+        appLink.appendChild(appIcon);
         appDiv.appendChild(appLink);
-    
-
         applicationsDiv.appendChild(appDiv);
+
+        if (app.id === 'app7') {
+            appLink.addEventListener('click', function(event) {
+                event.preventDefault();
+
+            
+                galleryDiv.style.display = 'block';
+            });
+        }
+    });
+
+
+    backToMenuButton.addEventListener('click', function() {
+        galleryDiv.style.display = 'none';
+        applicationsDiv.style.display = 'flex';
     });
 });
-
-function openApp(appId) {
-    alert('Opening ' + appId);
-}

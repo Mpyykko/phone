@@ -3,6 +3,7 @@ html, body {
     padding: 0;
     height: 100%;
     font-family: "Rubik", sans-serif;
+    background-color: black;
  
 }
 
@@ -103,11 +104,6 @@ html, body {
    
 }
 
-.app:hover {
-    background-color: #f0f0f0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 .app-icon {
     width: 60px;
     height: 60px;
@@ -123,6 +119,21 @@ html, body {
     text-decoration: none;
     color: #333;
     color: white;
+}
+
+.gallery{
+    position: absolute;
+    height: 60%;
+    width: 100%;
+    top:100px;
+    background-color:rgba(0, 0, 0, 0.799);
+    backdrop-filter: blur(10px);
+    display: none;
+
+}
+
+.applications.show, .gallery.show {
+    display: block;
 }
 
 

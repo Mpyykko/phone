@@ -88,7 +88,7 @@ html, body {
 
 .top-div{
     position: absolute;
-    top: 100px;
+    top: 50px;
     width: 100%;
     height: 100px;
     text-align: center;
@@ -98,7 +98,7 @@ html, body {
 
 .bottom-div {
     position: absolute;
-    bottom: 20px;
+    bottom: 100px;
     width: 90%;
     height: 100px;
     text-align: center;
@@ -107,31 +107,45 @@ html, body {
     border-radius: 15px;
     left: 50%;
     transform: translateX(-50%);
-    overflow: auto;
+    overflow: hidden;
 }
 
 .scroll-container {
-    display: inline-flex;
+    display: flex;
     align-items: center;
     height: 100%;
     overflow-x: auto;
-    white-space: nowrap; 
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
 }
 
 .bottom-div .app {
-    flex: 0 0 auto;
-    margin: 0 15px;
+    flex: 0 0 calc((100% - 40px) / 4);
+    margin: 0 5px;
+}
+
+
+.bottom-div .app:first-child {
+    margin-left: 5px;
+}
+
+.bottom-div .app:last-child {
+    margin-right: 5px;
 }
 
 .applications-container {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    max-width: 400px;
     height: 360px; 
-    position: relative;
-    top: 200px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -162,7 +176,7 @@ html, body {
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
+
 }
 
 .app-icon {
@@ -200,7 +214,7 @@ html, body {
     }
 
     .applications-container {
-        top: 300px;
+        top: 200px;
       
     }
 }

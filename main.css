@@ -60,24 +60,30 @@ html, body {
 }
 #reception{
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 70px;
     width: 30px;
-    height: 80%;
+    height: 50%;
+    transform: translateY(-50%); 
 }
 
 
 #connection{
     position: absolute;
+    top: 50%;
     right: 45px;
+    height: 50%;
+    transform: translateY(-50%); 
 }
 
 #battery{
     position: absolute;
-    top: 3px;
+    top: 50%;
     right: 10px;
     width: 30px;
-    height: 60%;
+    height: 50%;
+    transform: translateY(-50%); 
+   
 }
 
 
@@ -88,7 +94,7 @@ html, body {
     width: 100%;
     max-width: 400px;
     height: 270px; 
-    overflow: hidden;
+   
     position: relative;
     top: 200px;
     left: 50%;
@@ -159,7 +165,7 @@ html, body {
     }
 
     .applications-container {
-        top: 250px;
+        top: 300px;
       
     }
 }

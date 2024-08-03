@@ -64,12 +64,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const row1 = document.querySelector('#row1');
     const row2 = document.querySelector('#row2');
     const row3 = document.querySelector('#row3');
+    const row4 = document.querySelector('#row4');
     const galleryDiv = document.querySelector('.gallery');
     const backToMenuButton = document.querySelector('#backToMenu');
 
     const apps = [
-        { id: 'app1', icon: 'images/fb2.png', link: '#' },
-        { id: 'app2', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app1', icon: 'images/fb.png', link: '#' },
+        { id: 'app2', icon: 'images/clock.png', link: '#' },
         { id: 'app3', icon: 'images/yu.png', link: '#' },
         { id: 'app4', icon: 'images/vs.png', link: '#' },
         { id: 'app5', icon: 'images/sa.png', link: '#' },
@@ -77,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app7', icon: 'images/gm.jpg', link: '#' },
         { id: 'app8', icon: 'images/gal.jpg', link: '#' },
         { id: 'app9', icon: 'images/clock.png', link: '#' },
-        { id: 'app10', icon: 'images/clock.png', link: '#' },
+        { id: 'app10', icon: 'images/gm.jpg', link: '#' },
         { id: 'app11', icon: 'images/ap.png', link: '#' },
-        { id: 'app12', icon: 'images/fb2.png', link: '#' },
+        { id: 'app12', icon: 'images/fb.png', link: '#' },
         { id: 'app13', icon: 'images/gm.jpg', link: '#' },
         { id: 'app14', icon: 'images/yu.png', link: '#' },
         { id: 'app15', icon: 'images/vs.png', link: '#' },
@@ -89,8 +90,18 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app19', icon: 'images/yu.png', link: '#' },
         { id: 'app20', icon: 'images/vs.png', link: '#' },
         { id: 'app21', icon: 'images/sa.png', link: '#' },
-        { id: 'app22', icon: 'images/ap.png', link: '#' },
-        { id: 'app23', icon: 'images/gal.jpg', link: '#' }
+        { id: 'app22', icon: 'images/fb.png', link: '#' },
+        { id: 'app23', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app24', icon: 'images/yu.png', link: '#' },
+        { id: 'app25', icon: 'images/vs.png', link: '#' },
+        { id: 'app26', icon: 'images/sa.png', link: '#' },
+        { id: 'app27', icon: 'images/clock.png', link: '#' },
+        { id: 'app28', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app29', icon: 'images/yu.png', link: '#' },
+        { id: 'app30', icon: 'images/vs.png', link: '#' },
+        { id: 'app31', icon: 'images/sa.png', link: '#' },
+        { id: 'app32', icon: 'images/ap.png', link: '#' },
+        { id: 'app33', icon: 'images/gal.jpg', link: '#' }
     ];
 
     apps.forEach((app, index) => {
@@ -109,12 +120,14 @@ document.addEventListener('DOMContentLoaded', function() {
         appLink.appendChild(appIcon);
         appDiv.appendChild(appLink);
 
-        if (index % 3 === 0) {
+        if (index % 4 === 0) {
             row1.appendChild(appDiv);
-        } else if (index % 3 === 1) {
+        } else if (index % 4 === 1) {
             row2.appendChild(appDiv);
-        } else {
+        } else if (index % 4 === 2) {
             row3.appendChild(appDiv);
+        } else {
+            row4.appendChild(appDiv);
         }
 
         if (app.id === 'app8') {
@@ -125,6 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     });
+
 
     backToMenuButton.addEventListener('click', function() {
         galleryDiv.style.display = 'none';
@@ -146,3 +160,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+

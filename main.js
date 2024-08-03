@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToMenuButton = document.querySelector('#backToMenu');
 
     const apps = [
-        { id: 'app1', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app1', icon: 'images/fb2.png', link: '#' },
         { id: 'app2', icon: 'images/gm.jpg', link: '#' },
         { id: 'app3', icon: 'images/yu.png', link: '#' },
         { id: 'app4', icon: 'images/vs.png', link: '#' },

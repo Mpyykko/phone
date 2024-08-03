@@ -38,19 +38,19 @@ document.getElementById('enterFullscreen').addEventListener('click', function() 
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
         }
-        this.textContent = "Fullscreen";
+        this.textContent = "Exit";
     }
 });
 
 function handleFullscreenChange() {
-    var button = document.getElementById('enterFullscreen');
+    const button = document.getElementById('enterFullscreen');
     if (!document.fullscreenElement &&
         !document.mozFullScreenElement &&
         !document.webkitFullscreenElement &&
         !document.msFullscreenElement) {
         button.textContent = "Fullscreen";
     } else {
-        button.textContent = "Fullscreen";
+        button.textContent = "Exit";
     }
 }
 

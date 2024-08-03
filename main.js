@@ -65,11 +65,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const apps = [
         { id: 'app1', icon: 'images/fb.jpg', link: '#' },
-        { id: 'app2', icon: 'images/fb.jpg', link: '#' },
-        { id: 'app3', icon: 'images/fb.jpg', link: '#' },
-        { id: 'app4', icon: 'images/fb.jpg', link: '#' },
-        { id: 'app5', icon: 'images/fb.jpg', link: '#' },
-        { id: 'app6', icon: 'images/fb.jpg', link: '#' }
+        { id: 'app2', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app3', icon: 'images/yu.png', link: '#' },
+        { id: 'app4', icon: 'images/vs.png', link: '#' },
+        { id: 'app5', icon: 'images/sa.png', link: '#' },
+        { id: 'app6', icon: 'images/ap.png', link: '#' }
        
     ];
 

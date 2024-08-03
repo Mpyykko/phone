@@ -61,7 +61,9 @@ document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const applicationsDiv = document.querySelector('.applications');
+    const row1 = document.querySelector('#row1');
+    const row2 = document.querySelector('#row2');
+    const row3 = document.querySelector('#row3');
     const galleryDiv = document.querySelector('.gallery');
     const backToMenuButton = document.querySelector('#backToMenu');
 
@@ -72,15 +74,26 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app4', icon: 'images/vs.png', link: '#' },
         { id: 'app5', icon: 'images/sa.png', link: '#' },
         { id: 'app6', icon: 'images/ap.png', link: '#' },
-        { id: 'app8', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app9', icon: 'images/yu.png', link: '#' },
-        { id: 'app10', icon: 'images/vs.png', link: '#' },
-        { id: 'app11', icon: 'images/sa.png', link: '#' },
-        { id: 'app12', icon: 'images/ap.png', link: '#' },
-        { id: 'app13', icon: 'images/gal.jpg', link: '#' }
+        { id: 'app7', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app8', icon: 'images/yu.png', link: '#' },
+        { id: 'app9', icon: 'images/vs.png', link: '#' },
+        { id: 'app10', icon: 'images/sa.png', link: '#' },
+        { id: 'app11', icon: 'images/ap.png', link: '#' },
+        { id: 'app12', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app13', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app14', icon: 'images/yu.png', link: '#' },
+        { id: 'app15', icon: 'images/vs.png', link: '#' },
+        { id: 'app16', icon: 'images/sa.png', link: '#' },
+        { id: 'app17', icon: 'images/ap.png', link: '#' },
+        { id: 'app18', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app19', icon: 'images/yu.png', link: '#' },
+        { id: 'app20', icon: 'images/vs.png', link: '#' },
+        { id: 'app21', icon: 'images/sa.png', link: '#' },
+        { id: 'app22', icon: 'images/ap.png', link: '#' },
+        { id: 'app23', icon: 'images/gal.jpg', link: '#' }
     ];
 
-    apps.forEach(app => {
+    apps.forEach((app, index) => {
         const appDiv = document.createElement('div');
         appDiv.className = 'app';
 
@@ -95,21 +108,41 @@ document.addEventListener('DOMContentLoaded', function() {
 
         appLink.appendChild(appIcon);
         appDiv.appendChild(appLink);
-        applicationsDiv.appendChild(appDiv);
 
-        if (app.id === 'app13') {
+        if (index % 3 === 0) {
+            row1.appendChild(appDiv);
+        } else if (index % 3 === 1) {
+            row2.appendChild(appDiv);
+        } else {
+            row3.appendChild(appDiv);
+        }
+
+        if (app.id === 'app23') {
             appLink.addEventListener('click', function(event) {
                 event.preventDefault();
-
-            
+                document.querySelector('.applications-container').style.display = 'none';
                 galleryDiv.style.display = 'block';
             });
         }
     });
 
-
     backToMenuButton.addEventListener('click', function() {
         galleryDiv.style.display = 'none';
-        applicationsDiv.style.display = 'flex';
+        document.querySelector('.applications-container').style.display = 'flex';
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rows = document.querySelectorAll('.applications-row');
+    let previousRow = null;
+
+    rows.forEach(row => {
+        row.addEventListener('scroll', function() {
+            if (previousRow && previousRow !== row) {
+                previousRow.scrollTop = 0;
+            }
+            previousRow = row;
+        });
     });
 });

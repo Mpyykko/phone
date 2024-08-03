@@ -1,0 +1,83 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: "Rubik", sans-serif;
+ 
+}
+
+.phone-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.phone{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width:300px;
+    height: 600px;
+    background-color: black;
+}
+
+#enterFullscreen{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgba(46, 171, 169, 0.795);
+    color: white;
+    padding-bottom: 5px;
+
+}
+
+.top{
+    position: absolute;
+    top: 5px;
+    height: 20px;
+    width: 100%;
+    color: white;
+}
+
+#clock{
+    position: absolute;
+    left: 10px;
+}
+#reception{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    width: 30px;
+    height: 80%;
+}
+
+
+#connection{
+    position: absolute;
+    right: 45px;
+}
+
+#battery{
+    position: absolute;
+    top: 3px;
+    right: 10px;
+    width: 30px;
+    height: 60%;
+}
+
+
+@media screen and (max-width: 700px) {
+    .phone{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+

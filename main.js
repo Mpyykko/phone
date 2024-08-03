@@ -75,16 +75,16 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app5', icon: 'images/sa.png', link: '#' },
         { id: 'app6', icon: 'images/ap.png', link: '#' },
         { id: 'app7', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app8', icon: 'images/yu.png', link: '#' },
-        { id: 'app9', icon: 'images/vs.png', link: '#' },
-        { id: 'app10', icon: 'images/sa.png', link: '#' },
+        { id: 'app8', icon: 'images/gal.jpg', link: '#' },
+        { id: 'app9', icon: 'images/clock.png', link: '#' },
+        { id: 'app10', icon: 'images/clock.png', link: '#' },
         { id: 'app11', icon: 'images/ap.png', link: '#' },
         { id: 'app12', icon: 'images/fb.jpg', link: '#' },
         { id: 'app13', icon: 'images/gm.jpg', link: '#' },
         { id: 'app14', icon: 'images/yu.png', link: '#' },
         { id: 'app15', icon: 'images/vs.png', link: '#' },
         { id: 'app16', icon: 'images/sa.png', link: '#' },
-        { id: 'app17', icon: 'images/ap.png', link: '#' },
+        { id: 'app17', icon: 'images/clock.png', link: '#' },
         { id: 'app18', icon: 'images/gm.jpg', link: '#' },
         { id: 'app19', icon: 'images/yu.png', link: '#' },
         { id: 'app20', icon: 'images/vs.png', link: '#' },
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
             row3.appendChild(appDiv);
         }
 
-        if (app.id === 'app23') {
+        if (app.id === 'app8') {
             appLink.addEventListener('click', function(event) {
                 event.preventDefault();
                 document.querySelector('.applications-container').style.display = 'none';

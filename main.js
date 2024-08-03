@@ -1,4 +1,4 @@
-console.log('Hi guys :)');
+console.log('Hi guys :) this web site is made for mobile devices with screens less than 700px wide');
 
 const now = new Date();
 
@@ -14,7 +14,10 @@ document.getElementById('clock').textContent = Time;
 
 document.getElementById('enterFullscreen').addEventListener('click', function() {
     const elem = document.getElementById('phone');
-    if (!document.fullscreenElement) {
+    if (!document.fullscreenElement &&
+        !document.mozFullScreenElement &&
+        !document.webkitFullscreenElement &&
+        !document.msFullscreenElement) {
         if (elem.requestFullscreen) {
             elem.requestFullscreen();
         } else if (elem.mozRequestFullScreen) {
@@ -51,10 +54,49 @@ function handleFullscreenChange() {
     }
 }
 
-
 document.addEventListener('fullscreenchange', handleFullscreenChange);
 document.addEventListener('mozfullscreenchange', handleFullscreenChange);
 document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
 document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const applicationsDiv = document.querySelector('.applications');
+
+    const apps = [
+        { id: 'app1', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app2', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app3', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app4', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app5', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app6', icon: 'images/fb.jpg', link: '#' }
+       
+    ];
+
+    apps.forEach(app => {
+        const appDiv = document.createElement('div');
+        appDiv.className = 'app';
+        appDiv.setAttribute('onclick', `openApp('${app.id}')`);
+
+        const appIcon = document.createElement('img');
+        appIcon.src = app.icon;
+        appIcon.alt = `Icon for ${app.id}`;
+        appIcon.className = 'app-icon';
+
+        const appLink = document.createElement('a');
+        appLink.href = app.link;
+        appLink.className = 'app-link';
+        appLink.textContent = app.id;
+
+  
+        appDiv.appendChild(appIcon);
+        appDiv.appendChild(appLink);
+    
+
+        applicationsDiv.appendChild(appDiv);
+    });
+});
+
+function openApp(appId) {
+    alert('Opening ' + appId);
+}

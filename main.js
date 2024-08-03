@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app9', icon: 'images/clock.png', link: '#' },
         { id: 'app10', icon: 'images/clock.png', link: '#' },
         { id: 'app11', icon: 'images/ap.png', link: '#' },
-        { id: 'app12', icon: 'images/fb.jpg', link: '#' },
+        { id: 'app12', icon: 'images/fb2.png', link: '#' },
         { id: 'app13', icon: 'images/gm.jpg', link: '#' },
         { id: 'app14', icon: 'images/yu.png', link: '#' },
         { id: 'app15', icon: 'images/vs.png', link: '#' },

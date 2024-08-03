@@ -72,7 +72,12 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app4', icon: 'images/vs.png', link: '#' },
         { id: 'app5', icon: 'images/sa.png', link: '#' },
         { id: 'app6', icon: 'images/ap.png', link: '#' },
-        { id: 'app7', icon: 'images/gal.jpg', link: '#' }
+        { id: 'app8', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app9', icon: 'images/yu.png', link: '#' },
+        { id: 'app10', icon: 'images/vs.png', link: '#' },
+        { id: 'app11', icon: 'images/sa.png', link: '#' },
+        { id: 'app12', icon: 'images/ap.png', link: '#' },
+        { id: 'app13', icon: 'images/gal.jpg', link: '#' }
     ];
 
     apps.forEach(app => {
@@ -92,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
         appDiv.appendChild(appLink);
         applicationsDiv.appendChild(appDiv);
 
-        if (app.id === 'app7') {
+        if (app.id === 'app13') {
             appLink.addEventListener('click', function(event) {
                 event.preventDefault();
 

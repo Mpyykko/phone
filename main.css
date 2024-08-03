@@ -45,10 +45,13 @@ html, body {
 
 .top{
     position: absolute;
-    top: 5px;
+    top: 0;
     height: 20px;
     width: 100%;
     color: white;
+    background-color: black;
+    padding-bottom: 3px;
+    padding-top: 5px;
 }
 
 #clock{
@@ -81,12 +84,12 @@ html, body {
 .applications {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    align-content: flex-start;
     position: absolute;
     height: 60%;
     width: 100%;
-    top:200px;
+    top: 200px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -94,14 +97,12 @@ html, body {
 .app {
     width: 60px;
     height: 60px;
-    margin-left: 10px;
-    margin-left: 10px;
+    margin: 15px;
     border: none;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-   
 }
 
 .app-icon {
@@ -109,17 +110,10 @@ html, body {
     height: 60px;
     object-fit: contain;
     border-radius: 10px;
-    
 }
 
-.app-link {
-    display: block;
-    margin: 10px 0;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-    color: white;
-}
+
+
 
 .gallery{
     position: absolute;

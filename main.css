@@ -63,7 +63,7 @@ html, body {
     top: 50%;
     right: 70px;
     width: 30px;
-    height: 50%;
+    height: 60%;
     transform: translateY(-50%); 
 }
 
@@ -72,7 +72,7 @@ html, body {
     position: absolute;
     top: 50%;
     right: 45px;
-    height: 50%;
+    font-size: 16px;
     transform: translateY(-50%); 
 }
 
@@ -81,7 +81,7 @@ html, body {
     top: 50%;
     right: 10px;
     width: 30px;
-    height: 50%;
+    height: 60%;
     transform: translateY(-50%); 
    
 }

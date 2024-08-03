@@ -38,7 +38,7 @@ document.getElementById('enterFullscreen').addEventListener('click', function() 
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
         }
-        this.textContent = "Exit";
+        this.textContent = "Fullscreen";
     }
 });
 
@@ -50,7 +50,7 @@ function handleFullscreenChange() {
         !document.msFullscreenElement) {
         button.textContent = "Fullscreen";
     } else {
-        button.textContent = "Exit";
+        button.textContent = "Fullscreen";
     }
 }
 

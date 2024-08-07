@@ -2,12 +2,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const bottomDiv = document.querySelector('.bottom-div .scroll-container');
 
     const moreApps = [
-        { id: 'app24', icon: 'images/wa.png', link: '#' },
-        { id: 'app25', icon: 'images/vs.png', link: '#' },
-        { id: 'app25', icon: 'images/fb.png', link: '#' },
-        { id: 'app25', icon: 'images/gal.jpg', link: '#' },
-        { id: 'app25', icon: 'images/clock.png', link: '#' },
-        { id: 'app25', icon: 'images/gm.jpg', link: '#' }
+       
+        { id: 'app35', icon: 'images/vs.png', link: '#' },
+        { id: 'app36', icon: 'images/fb.png', link: '#' },
+        { id: 'app34', icon: 'images/wa.png', link: '#' },
+        { id: 'app37', icon: 'images/gal.jpg', link: '#' },
+        { id: 'app38', icon: 'images/clock.png', link: '#' },
+        { id: 'app39', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app40', icon: 'images/yu.png', link: '#' },
+        { id: 'app41', icon: 'images/set.webp', link: '#' }
+        
    
     ];
 

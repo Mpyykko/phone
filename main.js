@@ -70,16 +70,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const apps = [
         { id: 'app1', icon: 'images/fb.png', link: '#', name: 'Facebook' },
-        { id: 'app2', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app2', icon: 'images/fi.png', link: '#', name: 'Find' },
         { id: 'app3', icon: 'images/yu.png', link: '#', name: 'YouTube' },
         { id: 'app4', icon: 'images/vs.png', link: '#', name: 'VS Code' },
         { id: 'app5', icon: 'images/sa.png', link: '#', name: 'Safari' },
-        { id: 'app6', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app6', icon: 'images/ap.png', link: '#', name: 'App Store' },
         { id: 'app7', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
         { id: 'app8', icon: 'images/gal.jpg', link: '#', name: 'Gallery' },
         { id: 'app9', icon: 'images/clock.png', link: '#', name: 'Clock' },
-        { id: 'app10', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
-        { id: 'app11', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app10', icon: 'images/set.webp', link: '#', name: 'Settings' },
+        { id: 'app11', icon: 'images/ap.png', link: '#', name: 'App Store' },
         { id: 'app12', icon: 'images/fb.png', link: '#', name: 'Facebook' },
         { id: 'app13', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
         { id: 'app14', icon: 'images/yu.png', link: '#', name: 'YouTube' },
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app29', icon: 'images/yu.png', link: '#', name: 'YouTube' },
         { id: 'app30', icon: 'images/vs.png', link: '#', name: 'VS Code' },
         { id: 'app31', icon: 'images/sa.png', link: '#', name: 'Safari' },
-        { id: 'app32', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app32', icon: 'images/ap.png', link: '#', name: 'App Store' },
         { id: 'app33', icon: 'images/gal.jpg', link: '#', name: 'Gallery' }
     ];
 

@@ -27,7 +27,6 @@ document.getElementById('enterFullscreen').addEventListener('click', function() 
         } else if (elem.msRequestFullscreen) {
             elem.msRequestFullscreen();
         }
-        this.textContent = "Fullscreen";
     } else {
         if (document.exitFullscreen) {
             document.exitFullscreen();
@@ -38,7 +37,6 @@ document.getElementById('enterFullscreen').addEventListener('click', function() 
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
         }
-        this.textContent = "Fullscreen";
     }
 });
 
@@ -48,9 +46,9 @@ function handleFullscreenChange() {
         !document.mozFullScreenElement &&
         !document.webkitFullscreenElement &&
         !document.msFullscreenElement) {
-        button.textContent = "Fullscreen";
+        button.style.display = 'block';
     } else {
-        button.textContent = "Fullscreen";
+        button.style.display = 'none';
     }
 }
 

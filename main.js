@@ -1,4 +1,4 @@
-console.log('Hi guys :)');
+console.log('Hi :)');
 
 const now = new Date();
 
@@ -69,39 +69,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const backToMenuButton = document.querySelector('#backToMenu');
 
     const apps = [
-        { id: 'app1', icon: 'images/fb.png', link: '#' },
-        { id: 'app2', icon: 'images/clock.png', link: '#' },
-        { id: 'app3', icon: 'images/yu.png', link: '#' },
-        { id: 'app4', icon: 'images/vs.png', link: '#' },
-        { id: 'app5', icon: 'images/sa.png', link: '#' },
-        { id: 'app6', icon: 'images/ap.png', link: '#' },
-        { id: 'app7', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app8', icon: 'images/gal.jpg', link: '#' },
-        { id: 'app9', icon: 'images/clock.png', link: '#' },
-        { id: 'app10', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app11', icon: 'images/ap.png', link: '#' },
-        { id: 'app12', icon: 'images/fb.png', link: '#' },
-        { id: 'app13', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app14', icon: 'images/yu.png', link: '#' },
-        { id: 'app15', icon: 'images/vs.png', link: '#' },
-        { id: 'app16', icon: 'images/sa.png', link: '#' },
-        { id: 'app17', icon: 'images/clock.png', link: '#' },
-        { id: 'app18', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app19', icon: 'images/yu.png', link: '#' },
-        { id: 'app20', icon: 'images/vs.png', link: '#' },
-        { id: 'app21', icon: 'images/sa.png', link: '#' },
-        { id: 'app22', icon: 'images/fb.png', link: '#' },
-        { id: 'app23', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app24', icon: 'images/yu.png', link: '#' },
-        { id: 'app25', icon: 'images/vs.png', link: '#' },
-        { id: 'app26', icon: 'images/sa.png', link: '#' },
-        { id: 'app27', icon: 'images/clock.png', link: '#' },
-        { id: 'app28', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app29', icon: 'images/yu.png', link: '#' },
-        { id: 'app30', icon: 'images/vs.png', link: '#' },
-        { id: 'app31', icon: 'images/sa.png', link: '#' },
-        { id: 'app32', icon: 'images/ap.png', link: '#' },
-        { id: 'app33', icon: 'images/gal.jpg', link: '#' }
+        { id: 'app1', icon: 'images/fb.png', link: '#', name: 'Facebook' },
+        { id: 'app2', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app3', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app4', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app5', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app6', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app7', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app8', icon: 'images/gal.jpg', link: '#', name: 'Gallery' },
+        { id: 'app9', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app10', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app11', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app12', icon: 'images/fb.png', link: '#', name: 'Facebook' },
+        { id: 'app13', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app14', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app15', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app16', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app17', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app18', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app19', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app20', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app21', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app22', icon: 'images/fb.png', link: '#', name: 'Facebook' },
+        { id: 'app23', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app24', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app25', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app26', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app27', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app28', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app29', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app30', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app31', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app32', icon: 'images/ap.png', link: '#', name: 'Apple' },
+        { id: 'app33', icon: 'images/gal.jpg', link: '#', name: 'Gallery' }
     ];
 
     apps.forEach((app, index) => {
@@ -117,8 +117,13 @@ document.addEventListener('DOMContentLoaded', function() {
         appIcon.alt = `Icon for ${app.id}`;
         appIcon.className = 'app-icon';
 
+        const appName = document.createElement('div');
+        appName.className = 'app-name';
+        appName.textContent = app.name;
+
         appLink.appendChild(appIcon);
         appDiv.appendChild(appLink);
+        appDiv.appendChild(appName);
 
         if (index % 4 === 0) {
             row1.appendChild(appDiv);
@@ -139,13 +144,11 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-
     backToMenuButton.addEventListener('click', function() {
         galleryDiv.style.display = 'none';
         document.querySelector('.applications-container').style.display = 'flex';
     });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     const rows = document.querySelectorAll('.applications-row');
@@ -160,5 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
 
 

@@ -1,33 +1,27 @@
 console.log('Hi :)');
 
-const now = new Date();
+document.addEventListener('DOMContentLoaded', function() {
+    const now = new Date();
+
+ 
+    const dateElement = document.getElementById('date');
+    const dateOptions = { weekday: 'long', month: 'long', day: 'numeric' };
+    dateElement.textContent = new Intl.DateTimeFormat('en-US', dateOptions).format(now);
 
 
-const hours = now.getHours();
-const minutes = now.getMinutes();
+    const timeElement = document.getElementById('clock');
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    timeElement.textContent = `${hours}.${minutes < 10 ? '0' : ''}${minutes}`;
+});
 
-
-let Time = hours + '.' + (minutes < 10 ? '0' : '') + minutes;
-
-document.getElementById('clock').textContent = Time;
 
 
 document.getElementById('enterFullscreen').addEventListener('click', function() {
-    const elem = document.getElementById('phone');
-    if (!document.fullscreenElement &&
-        !document.mozFullScreenElement &&
-        !document.webkitFullscreenElement &&
-        !document.msFullscreenElement) {
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) {
-            elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        }
-    } else {
+    const elem = document.getElementById('phone') || document.documentElement;
+    
+    if (document.fullscreenElement || document.mozFullScreenElement || 
+        document.webkitFullscreenElement || document.msFullscreenElement) {
         if (document.exitFullscreen) {
             document.exitFullscreen();
         } else if (document.mozCancelFullScreen) {
@@ -36,6 +30,16 @@ document.getElementById('enterFullscreen').addEventListener('click', function() 
             document.webkitExitFullscreen();
         } else if (document.msExitFullscreen) {
             document.msExitFullscreen();
+        }
+    } else {
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.mozRequestFullScreen) { 
+            elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullscreen) { 
+            elem.webkitRequestFullscreen(Element.ALLOW_KEYBOARD_INPUT);
+        } else if (elem.msRequestFullscreen) { 
+            elem.msRequestFullscreen();
         }
     }
 });

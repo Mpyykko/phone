@@ -148,16 +148,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const rows = document.querySelectorAll('.applications-row');
-    let previousRow = null;
 
     rows.forEach(row => {
         row.addEventListener('scroll', function() {
-            if (previousRow && previousRow !== row) {
-                previousRow.scrollTop = 0;
-            }
-            previousRow = row;
+            const scrollTop = row.scrollTop;
+            
+            rows.forEach(otherRow => {
+                if (otherRow !== row) {
+                    otherRow.scrollTop = scrollTop;
+                }
+            });
         });
     });
 });

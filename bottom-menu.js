@@ -3,14 +3,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const moreApps = [
        
-        { id: 'app35', icon: 'images/vs.png', link: '#' },
-        { id: 'app36', icon: 'images/fb.png', link: '#' },
-        { id: 'app34', icon: 'images/wa.png', link: '#' },
-        { id: 'app37', icon: 'images/gal.jpg', link: '#' },
-        { id: 'app38', icon: 'images/clock.png', link: '#' },
-        { id: 'app39', icon: 'images/gm.jpg', link: '#' },
-        { id: 'app40', icon: 'images/yu.png', link: '#' },
-        { id: 'app41', icon: 'images/set.webp', link: '#' }
+        { id: 'app45', icon: 'images/vs.png', link: '#' },
+        { id: 'app46', icon: 'images/fb.png', link: '#' },
+        { id: 'app47', icon: 'images/wa.png', link: '#' },
+        { id: 'app48', icon: 'images/clock.png', link: '#' },
+        { id: 'app49', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app50', icon: 'images/yu.png', link: '#' },
+        { id: 'app51', icon: 'images/gal.jpg', link: '#' },
+        { id: 'app52', icon: 'images/clock.png', link: '#' },
+        { id: 'app53', icon: 'images/gm.jpg', link: '#' },
+        { id: 'app54', icon: 'images/yu.png', link: '#' },
+        { id: 'app55', icon: 'images/set.webp', link: '#' }
         
    
     ];

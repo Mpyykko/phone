@@ -108,7 +108,19 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app30', icon: 'images/vs.png', link: '#', name: 'VS Code' },
         { id: 'app31', icon: 'images/sa.png', link: '#', name: 'Safari' },
         { id: 'app32', icon: 'images/ap.png', link: '#', name: 'App Store' },
-        { id: 'app33', icon: 'images/gal.jpg', link: '#', name: 'Gallery' }
+        { id: 'app33', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app34', icon: 'images/fb.png', link: '#', name: 'Facebook' },
+        { id: 'app35', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app36', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app37', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app38', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app39', icon: 'images/clock.png', link: '#', name: 'Clock' },
+        { id: 'app40', icon: 'images/gm.jpg', link: '#', name: 'Gmail' },
+        { id: 'app41', icon: 'images/yu.png', link: '#', name: 'YouTube' },
+        { id: 'app42', icon: 'images/vs.png', link: '#', name: 'VS Code' },
+        { id: 'app43', icon: 'images/sa.png', link: '#', name: 'Safari' },
+        { id: 'app44', icon: 'images/ap.png', link: '#', name: 'App Store' },
+        { id: 'app45', icon: 'images/gal.jpg', link: '#', name: 'Gallery' }
     ];
 
     apps.forEach(app => {

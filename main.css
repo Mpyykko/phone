@@ -146,16 +146,16 @@ html, body {
     display: grid;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    width: calc(100% - 20px);
     height: 380px; 
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
     overflow-x: hidden;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 10px;
-    box-sizing: border-box;
+    gap: 5px;
+    padding: 5px;
+  
    
 }
 

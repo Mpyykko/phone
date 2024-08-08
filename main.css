@@ -94,6 +94,23 @@ html, body {
     height: 100px;
     text-align: center;
     color: white;
+    font-family: inherit;
+}
+
+#date {
+    text-align: center;
+   
+ 
+}
+
+#weekday {
+    font-size: 44px;
+    font-weight: bold;
+}
+
+#day {
+    font-size: 16px; 
+   
 }
 
 
@@ -154,6 +171,8 @@ html, body {
     overflow-x: hidden;
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+    padding-left: 10px;
+   
 }
 
 .applications-container::-webkit-scrollbar {
@@ -167,15 +186,13 @@ html, body {
     margin: 15px;
     border: none;
     text-align: center;
-    cursor: pointer;
 
 }
 
 .app-icon {
     width: 55px;
     height: 55px;
-    object-fit: contain;
-    border-radius: 15px;
+    border-radius: 13px;
  
 }
 

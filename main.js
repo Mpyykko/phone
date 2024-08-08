@@ -3,10 +3,18 @@ console.log('Hi :)');
 document.addEventListener('DOMContentLoaded', function() {
     const now = new Date();
 
- 
     const dateElement = document.getElementById('date');
-    const dateOptions = { weekday: 'long', month: 'long', day: 'numeric' };
-    dateElement.textContent = new Intl.DateTimeFormat('en-US', dateOptions).format(now);
+    const weekdayElement = document.getElementById('weekday');
+    const dayElement = document.getElementById('day');
+    
+    const dateOptions = { weekday: 'short', month: 'long', day: 'numeric' };
+    const formattedDate = new Intl.DateTimeFormat('en-US', dateOptions).format(now);
+    
+    
+    const [weekday, day] = formattedDate.split(', ');
+
+    weekdayElement.textContent = weekday;
+    dayElement.textContent = day;
 
 
     const timeElement = document.getElementById('clock');

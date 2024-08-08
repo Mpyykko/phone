@@ -99,7 +99,8 @@ html, body {
 
 #date {
     text-align: center;
-   
+    font-family:"Quicksand", sans-serif;
+  
  
 }
 
@@ -188,8 +189,8 @@ html, body {
 }
 
 .app-icon {
-    width: 55px;
-    height: 55px;
+    width: 52px;
+    height: 52px;
     border-radius: 13px;
  
 }

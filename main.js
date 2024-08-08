@@ -63,10 +63,7 @@ document.addEventListener('msfullscreenchange', handleFullscreenChange);
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const row1 = document.querySelector('#row1');
-    const row2 = document.querySelector('#row2');
-    const row3 = document.querySelector('#row3');
-    const row4 = document.querySelector('#row4');
+    const applicationsContainer = document.getElementById('applicationsContainer');
     const galleryDiv = document.querySelector('.gallery');
     const backToMenuButton = document.querySelector('#backToMenu');
 
@@ -106,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 'app33', icon: 'images/gal.jpg', link: '#', name: 'Gallery' }
     ];
 
-    apps.forEach((app, index) => {
+    apps.forEach(app => {
         const appDiv = document.createElement('div');
         appDiv.className = 'app';
 
@@ -127,15 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
         appDiv.appendChild(appLink);
         appDiv.appendChild(appName);
 
-        if (index % 4 === 0) {
-            row1.appendChild(appDiv);
-        } else if (index % 4 === 1) {
-            row2.appendChild(appDiv);
-        } else if (index % 4 === 2) {
-            row3.appendChild(appDiv);
-        } else {
-            row4.appendChild(appDiv);
-        }
+        applicationsContainer.appendChild(appDiv);
 
         if (app.id === 'app8') {
             appLink.addEventListener('click', function(event) {
@@ -148,27 +137,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     backToMenuButton.addEventListener('click', function() {
         galleryDiv.style.display = 'none';
-        document.querySelector('.applications-container').style.display = 'flex';
+        document.querySelector('.applications-container').style.display = 'grid';
     });
 });
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const rows = document.querySelectorAll('.applications-row');
-
-    rows.forEach(row => {
-        row.addEventListener('scroll', function() {
-            const scrollTop = row.scrollTop;
-            
-            rows.forEach(otherRow => {
-                if (otherRow !== row) {
-                    otherRow.scrollTop = scrollTop;
-                }
-            });
-        });
-    });
-});
-
-
-

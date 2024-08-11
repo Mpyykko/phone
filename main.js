@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const timeElement = document.getElementById('clock');
     const hours = now.getHours();
     const minutes = now.getMinutes();
-    timeElement.textContent = `${hours}.${minutes < 10 ? '0' : ''}${minutes}`;
+    timeElement.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
 });
 
 

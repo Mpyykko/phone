@@ -20,19 +20,21 @@
             </div>
             <button id="enterFullscreen">Fullscreen</button>
 
-            <div class="top-div">
-                <div id="date">
-                    <span id="weekday"></span><br>
-                    <span id="day"></span>
+            <div class="container" id="weather-container">
+                <div class="top-div">
+                    <div id="date">
+                        <span id="weekday"></span><br>
+                        <span id="day"></span>
+                    </div>
+                    <img id="weather-icon" src="images/weather.webp" alt="Weather">
+                    <div id="weather">
+                        <span id="city">Espoo</span>
+                        <span id="degrees"></span>
+                    </div>
+                    <div id="clock"></div>
                 </div>
-                <img id="weather-icon" src="images/weather.webp" alt="Weather">
-                <div id="weather">
-                    <span id="city">Espoo</span>
-                    <span id="degrees">33º</span>
-                    
-                </div>
-                
             </div>
+            
 
            
             <div class="applications-container" id="applicationsContainer"></div>
@@ -56,5 +58,6 @@
 
 <script src="main.js"></script>
 <script src="bottom-menu.js"></script>
+<script src="weather.js"></script>
 </body>
 </html>

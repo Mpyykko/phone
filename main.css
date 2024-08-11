@@ -87,6 +87,7 @@ html, body {
    
 }
 
+
 .top-div{
     position: absolute;
     top: 50px;
@@ -124,7 +125,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: start;
-    font-family: inherit;
+    font-family:"Quicksand", sans-serif;
     margin-right: 25px;
    
 }

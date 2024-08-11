@@ -23,12 +23,12 @@ clockElement.textContent = `${hours}:${minutes < 10 ? '0' : ''}${minutes}`;
 
 const days = [
     { weekday: weekday, day: day },
-    { weekday: "Tuesday", day: 13 },
-    { weekday: "Wednesday", day: 14 },
-    { weekday: "Thursday", day: 15 },
-    { weekday: "Friday", day: 16 },
-    { weekday: "Saturday", day: 17 },
-    { weekday: "Sunday", day: 18 }
+    { weekday: "Tue", day: 13 },
+    { weekday: "Wed", day: 14 },
+    { weekday: "Thu", day: 15 },
+    { weekday: "Fri", day: 16 },
+    { weekday: "Sat", day: 17 },
+    { weekday: "Sun", day: 18 }
 ];
 
 const degreesSpan = document.getElementById('degrees');

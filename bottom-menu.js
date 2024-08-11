@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const appIcon = document.createElement('img');
         appIcon.src = app.icon;
         appIcon.alt = `Icon for ${app.id}`;
-        appIcon.className = 'app-icon';
+        appIcon.className = 'app-icon2';
 
         appLink.appendChild(appIcon);
         appDiv.appendChild(appLink);
